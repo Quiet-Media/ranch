@@ -9,10 +9,9 @@ PROJECT_REGISTERED = ranch_server
 
 COMPILE_FIRST = ranch_transport
 CT_OPTS += -pa test -ct_hooks ranch_ct_hook []
-PLT_APPS = crypto public_key ssl
+PLT_APPS = crypto public_key tools
 
 CI_OTP ?= \
-	OTP_R16B OTP_R16B01 OTP_R16B02 OTP_R16B03-1 \
 	OTP-17.1.2 OTP-17.2.2 OTP-17.3.4 OTP-17.4.1 OTP-17.5.6.6 \
 	OTP-18.0.3 OTP-18.1.5 OTP-18.2.4.1 OTP-18.3.4.4 \
 	OTP-19.0.7 OTP-19.1.6
